@@ -28,3 +28,49 @@ Bikin list absen untuk mahasiswa
    * ouput diharapkan : Di folder downloads akan ada folder "absen-list"
 8. Masuk ke folder tersebut.
 9. Selesai. Project berhasil di Copy.
+
+*note: Project yg di copy defaultnya branch master, jadi yg di copy ke pc anda merupakan branch master atau utama 
+## Cara Copy Project branch/cabang tertentu ke local (PC anda) 💻
+*note: Disarankan menggunakan opsi 2 jika hanya mengcopy branch/cabang tertentu dan melakukan perubahan di cabang tertentu tersebut.
+### Opsi 1 
+Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang Anda tentukan, dan cabang tertentu menjadi cabang lokal yang dikonfigurasi.
+ 
+1. Buka Windows PowerShell.
+2. Masukkan command cd untuk menggati direktori folder ke folder Downloads agar saat copy repo, folder akan tersimpan di folder tersebut.
+
+   ```bash
+   cd Downloads
+   ```
+4. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
+
+   bentuk command :
+   ```bash
+   git clone -b <branchname> <remote-repo-url>
+   ```
+   contoh command :
+   ```bash
+   git clone -b fitur-input-data-mahasiswa https://github.com/crafzdog/absen-list.git
+   ```
+6. Selesai. Project berhasil di Copy ke folder downloads anda.
+   
+
+### Opsi 2
+Klon/copy repositori dan ambil satu cabang saja.
+ 
+1. Buka Windows PowerShell.
+2. Masukkan command cd untuk menggati direktori folder ke folder Downloads agar saat copy repo, folder akan tersimpan di folder tersebut.
+
+   ```bash
+   cd Downloads
+   ```
+4. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
+
+   bentuk command :
+   ```bash
+   git clone --branch <branchname> --single-branch <remote-repo-url>
+   ```
+   contoh command :
+   ```bash
+   git clone --branch fitur-input-data-mahasiswa --single-branch https://github.com/crafzdog/absen-list.git
+   ```
+6. Selesai. Project berhasil di Copy ke folder downloads anda.
