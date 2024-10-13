@@ -5,7 +5,7 @@ def main():
 
 
 # a function that help us to ask a question to the end user
-def prompt(question: str):
+def prompt(question: str) -> str:
     answer = input(question)
     return answer
 
