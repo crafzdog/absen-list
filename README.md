@@ -38,7 +38,6 @@ Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang And
 1. Buka Windows PowerShell.
 2. Masukkan command cd untuk menggati direktori folder ke folder Downloads agar saat copy repo, folder akan tersimpan di folder tersebut.
 
-   bentuk command :
    ```bash
    cd Downloads
    ```
@@ -61,7 +60,6 @@ Klon/copy repositori dan ambil satu cabang saja.
 1. Buka Windows PowerShell.
 2. Masukkan command cd untuk menggati direktori folder ke folder Downloads agar saat copy repo, folder akan tersimpan di folder tersebut.
 
-   bentuk command :
    ```bash
    cd Downloads
    ```
