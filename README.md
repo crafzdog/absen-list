@@ -32,7 +32,7 @@ Bikin list absen untuk mahasiswa
 *note: project yg di copy defaultnya branch master, jadi yg di copy ke pc anda merupakan branch master atau utama 
 ## Cara Copy Project branch/cabang tertentu ke local (PC anda) 💻
 
-# Opsi 1 
+### Opsi 1 
 Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang Anda tentukan, dan cabang tertentu menjadi cabang lokal yang dikonfigurasi.
  
 1. Buka Windows PowerShell.
@@ -53,7 +53,7 @@ Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang And
 4. Selesai. Project berhasil di Copy ke folder downloads anda.
    
 
-# Opsi 2
+### Opsi 2
 Klon/copy repositori dan ambil satu cabang saja.
  
 1. Buka Windows PowerShell.
