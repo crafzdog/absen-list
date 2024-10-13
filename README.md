@@ -6,6 +6,9 @@ Bikin list absen untuk mahasiswa
 
 # Cara Clone (Copy) project ini 🍎
 
-1. Install git (Control Version System).
-2. Memiliki Shell (CLI). Untuk Windows OS, bisa pakai Windows PowerShell.
-3. Check klo git udah ke install dengan baik. Pakek command : "git version".
+## Tools yang harus dimiliki ⚙️
+
+1. Python Interpreter. Minimal versi 3.5+ (3.5 atau lebih). Karena project ini pakai fitur Type Hint :)
+2. Shell (CLI). Untuk Windows OS, bisa pakai Windows PowerShell.
+3. Git (Control Version System). Install versi terbaru aja.
+4. Text Editor. Kita pakai yang sejuta umat. Pakai VSCode.
