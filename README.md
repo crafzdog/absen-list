@@ -41,7 +41,7 @@ Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang And
    ```bash
    cd Downloads
    ```
-3. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
+4. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
    bentuk command :
    ```bash
    git clone -b <branchname> <remote-repo-url>
@@ -50,7 +50,7 @@ Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang And
    ```bash
    git clone -b fitur-input-data-mahasiswa https://github.com/crafzdog/absen-list.git
    ```
-4. Selesai. Project berhasil di Copy ke folder downloads anda.
+6. Selesai. Project berhasil di Copy ke folder downloads anda.
    
 
 ### Opsi 2
@@ -62,7 +62,7 @@ Klon/copy repositori dan ambil satu cabang saja.
    ```bash
    cd Downloads
    ```
-3. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
+4. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
    bentuk command :
    ```bash
    git clone --branch <branchname> --single-branch <remote-repo-url>
@@ -71,4 +71,4 @@ Klon/copy repositori dan ambil satu cabang saja.
    ```bash
    git clone --branch fitur-input-data-mahasiswa --single-branch https://github.com/crafzdog/absen-list.git
    ```
-4. Selesai. Project berhasil di Copy ke folder downloads anda.
+6. Selesai. Project berhasil di Copy ke folder downloads anda.
