@@ -37,16 +37,16 @@ Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang And
  
 1. Buka Windows PowerShell.
 2. Masukkan command cd untuk menggati direktori folder ke folder Downloads agar saat copy repo, folder akan tersimpan di folder tersebut.
-    * bentuk command :
+   bentuk command :
    ```bash
    cd Downloads
    ```
 3. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
-   * bentuk command :
+   bentuk command :
    ```bash
    git clone -b <branchname> <remote-repo-url>
    ```
-    * contoh command :
+   contoh command :
    ```bash
    git clone -b fitur-input-data-mahasiswa https://github.com/crafzdog/absen-list.git
    ```
@@ -58,16 +58,16 @@ Klon/copy repositori dan ambil satu cabang saja.
  
 1. Buka Windows PowerShell.
 2. Masukkan command cd untuk menggati direktori folder ke folder Downloads agar saat copy repo, folder akan tersimpan di folder tersebut.
-    * bentuk command :
+   bentuk command :
    ```bash
    cd Downloads
    ```
 3. Copy project branch fitur-input-data-mahasiswa (sebagai contoh kasus):
-   * bentuk command :
+   bentuk command :
    ```bash
    git clone --branch <branchname> --single-branch <remote-repo-url>
    ```
-    * contoh command :
+   contoh command :
    ```bash
    git clone --branch fitur-input-data-mahasiswa --single-branch https://github.com/crafzdog/absen-list.git
    ```
