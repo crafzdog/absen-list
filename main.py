@@ -2,8 +2,14 @@
 
 
 def main():
-    pass
+    name = prompt("Insert your name : ")
+    print(name)
+
+
+def prompt(question: str):
+    answer = input(question)
+    return answer
 
 
 if __name__ == "__main__":
-    print("Hello world!")
+    main()
