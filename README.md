@@ -29,9 +29,9 @@ Bikin list absen untuk mahasiswa
 8. Masuk ke folder tersebut.
 9. Selesai. Project berhasil di Copy.
 
-*note: project yg di copy defaultnya branch master, jadi yg di copy ke pc anda merupakan branch master atau utama 
+*note: Project yg di copy defaultnya branch master, jadi yg di copy ke pc anda merupakan branch master atau utama 
 ## Cara Copy Project branch/cabang tertentu ke local (PC anda) 💻
-
+*note: Disarankan menggunakan opsi 2 jika hanya mengcopy branch/cabang tertentu dan melakukan perubahan di cabang tertentu tersebut.
 ### Opsi 1 
 Dengan ini, Anda mengambil semua cabang di repositori, memeriksa cabang yang Anda tentukan, dan cabang tertentu menjadi cabang lokal yang dikonfigurasi.
  
