@@ -1,23 +1,23 @@
 from menu import Menu
-
+from logic import login,load,register
 
 # a main() function acts as entry point executed when the script is starts
 def main():
     while True:
 
         print("================ MENU ================")
-        print("1. Tambah Data Mahasiswa.")
-        print("2. Daftar Data Mahasiswa.")
+        print("1. Register Mahasiswa.")
+        print("2. Login Data Mahasiswa.")
         print("3. Exit.")
 
         choice = input("\nMasukkan Menu yang anda pilih : ")
 
         match (choice):
-            case Menu.TAMBAH.value:
-                print("Tambah Siswa...")
+            case Menu.Register.value:
+                register()
 
-            case Menu.DAFTAR.value:
-                print("Daftar Mahasiswa...")
+            case Menu.Login.value:
+                login()
 
             case Menu.EXIT.value:
                 print("Exit...")

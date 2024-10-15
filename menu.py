@@ -3,6 +3,6 @@ from enum import Enum
 
 # menu enum for submission
 class Menu(Enum):
-    ADD = "1"
-    LIST = "2"
+    Register = "1"
+    Login = "2"
     EXIT = "0"
