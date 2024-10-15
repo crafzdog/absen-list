@@ -1,5 +1,6 @@
 from menu import Menu
 from logic import login,load,register
+from user_option import user_option
 
 # a main() function acts as entry point executed when the script is starts
 def main():
@@ -17,7 +18,12 @@ def main():
                 register()
 
             case Menu.Login.value:
-                login()
+                login_log = login()
+                if login_log:
+                    user_option()
+                    break
+                # if login_log:
+                #     user_option()
 
             case Menu.EXIT.value:
                 print(f"Exit...\n Cya ~~~")
