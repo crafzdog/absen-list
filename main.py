@@ -8,7 +8,7 @@ def main():
         print("================ MENU ================")
         print("1. Register Mahasiswa.")
         print("2. Login Data Mahasiswa.")
-        print("3. Exit.")
+        print("0. Exit.")
 
         choice = input("\nMasukkan Menu yang anda pilih : ")
 
@@ -20,7 +20,7 @@ def main():
                 login()
 
             case Menu.EXIT.value:
-                print("Exit...")
+                print(f"Exit...\n Cya ~~~")
                 break
 
 
