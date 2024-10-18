@@ -11,23 +11,21 @@ def main():
         print("2. Login Data Mahasiswa.")
         print("0. Exit.")
 
-        choice = input("\nMasukkan Menu yang anda pilih : ")
+        choice = input("\nMasukkan Menu yang anda pilih : ").lower()
 
-        match (choice):
-            case Menu.Register.value:
-                register()
+        if not handle_menu_option(choice):
+            break
 
-            case Menu.Login.value:
-                login_log = login()
-                if login_log:
-                    user_option()
-                    break
-                # if login_log:
-                #     user_option()
-
-            case Menu.EXIT.value:
-                print(f"Exit...\n Cya ~~~")
-                break
+def handle_menu_option(user_input: str) -> int:
+    match (user_input):
+        case _ if user_input in Menu.Register.value:
+            register()
+            return 1;
+        case _ if user_input in Menu.Login.value:
+            login()
+            return 1;
+        case _ if user_input in Menu.EXIT.value:
+            return 0;
 
 
 # ensures that the main() function is executed only when the script is run directly
