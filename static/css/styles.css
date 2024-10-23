@@ -1,6 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-nav-primary: #0f172a;
+    --fg-nav-primary: #f1f5f9;
+    --bg-nav-hover-primary: rgba(51, 65, 85, 0.77);
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: Inter, sans-serif;
     font-weight: 400;
+}
+
+.navbar {
+    background-color: var(--bg-nav-primary);
+    padding: 2rem 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+    margin-right: 10rem;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--fg-nav-primary);
+    font-size: 1.7rem;
+    padding: 1.2rem 1.5rem;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-nav-hover-primary);
+    border-radius: 0.5rem;
+}
+
+.nav-link-active {
+    background-color: var(--bg-nav-hover-primary);
+    border-radius: 0.5rem;
 }
