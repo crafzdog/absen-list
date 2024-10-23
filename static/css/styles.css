@@ -23,6 +23,9 @@ body {
     font-weight: 400;
 }
 
+/* ============================================ */
+/* Partials */
+
 .navbar {
     background-color: var(--bg-nav-primary);
     padding: 2rem 0;
@@ -52,4 +55,18 @@ body {
 .nav-link-active {
     background-color: var(--bg-nav-hover-primary);
     border-radius: 0.5rem;
+}
+
+.footer{
+    Background-color: lightgray;
+    height: 10vw;
+}
+/* ============================================ */
+/* footer */
+
+/* ============================================ */
+/* home */
+.homies{
+    height: 100vw;
+    background-color: white;
 }
