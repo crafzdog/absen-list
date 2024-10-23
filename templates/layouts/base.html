@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='css/styles.css')}}"
+        />
+    </head>
+    <body>
+        <!-- TITLE -->
+        {% include 'partials/navbar.html' %}
+
+        <!-- CONTENT -->
+        {% block content %}{% endblock %}
+    </body>
+</html>
