@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+{% extends 'layouts/main.html' %}
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Flask App</title>
-        <link
-            rel="stylesheet"
-            href="{{url_for('static', filename='css/styles.css')}}"
-        />
+        {% block title %}
+        {% endblock %}
     </head>
     <body>
-        {% include 'layouts/navbar.html' %}
-        
+        {% block content %}
+        <div class="test">
+            <h1>Test<br>
+            test<br>
+            test<p>
+                ters
+        </div>
     </body>
 </html>
+{% endblock %}
