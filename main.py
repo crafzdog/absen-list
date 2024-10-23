@@ -12,7 +12,6 @@ def main():
         print("0. Exit.")
 
         choice = input("\nMasukkan Menu yang anda pilih : ")
-
         match (choice):
             case Menu.Register.value:
                 register()

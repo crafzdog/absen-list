@@ -1,3 +1,5 @@
+import logging
+
 def load():
     with open("acc.txt","r")as file:
         return file.read().splitlines() if file.readable() else []
@@ -23,41 +25,56 @@ def register():
         break
 
 def login():
-    i=int(0)
-    data_acc = []
-    with open("acc.txt","r") as file:
-        data_acc = file.readlines()
-
     login_log = False
-
-    while True :
-        print("========= Login ==========")
-        username = str(input("Nama Akun = "))
-        password = str(input("Password Akun = "))
-        
-        for idx in range(0, len(data_acc),2):
-            stored_user = data_acc[idx].strip().split(" = ")[1]
-            stored_pass = data_acc[idx + 1].strip().split(" = ")[1]
-
-            print(f"Stored user : {stored_user},Stored pass : {stored_pass}")
-
-            if username == stored_user and password == stored_pass:
-                login_log = True
-                break
-        
-        if login_log == True:
-            print(f"hello {username}, W K B")
+    input_username = input("test :")
+    input_password = input("pass :")
+    for line in data_acc:
+        username, password = line.strip().split(" = ")
+        if username == input_username and password == input_password:
+            login_log = True
             break
-        else:
-            i += 1
 
-        if i == 1:
-            print("Username atau Password salah")
-        elif i == 2:
-            print("CODINGAN ERROR")
+        if login_log:
+            print(f"Hello {username} W K B")
         else:
-            print("JAN MAKSA BLOK")
-    return login_log
+            print("username atau password salah")
+            return login_log
+
+    # i=int(0)
+    # data_acc = []
+    # with open("acc.txt","r") as file:
+    #     data_acc = file.readlines()
+
+    # login_log = False
+
+    # while True :
+    #     print("========= Login ==========")
+    #     username = str(input("Nama Akun = "))
+    #     password = str(input("Password Akun = "))
+        
+    #     for idx in range(0, len(data_acc),2):
+    #         stored_user = data_acc[idx].strip().split(" = ")[1]
+    #         stored_pass = data_acc[idx + 1].strip().split(" = ")[1]
+
+    #         print(f"Stored user : {stored_user},Stored pass : {stored_pass}")
+
+    #         if username == stored_user and password == stored_pass:
+    #             login_log = True
+    #             break
+        
+    #     if login_log == True:
+    #         print(f"hello {username}, W K B")
+    #         break
+    #     else:
+    #         i += 1
+
+    #     if i == 1:
+    #         print("Username atau Password salah")
+    #     elif i == 2:
+    #         print("CODINGAN ERROR")
+    #     else:
+    #         print("JAN MAKSA BLOK")
+    # return login_log
 
         # for entry in data_acc:
         #     if(f"username = {username}" in entry and f"password = {password}" in entry):
