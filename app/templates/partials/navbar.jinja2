@@ -1,0 +1,24 @@
+<nav class="navbar">
+    <ul class="nav-links">
+        <li>
+            <a href="{{ url_for('page.home_page') }}"
+                class="nav-link {% if request.path == url_for('page.home_page')%}nav-link-active{% endif %}">Home
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('page.features_page') }}"
+                class="nav-link {% if request.path == url_for('page.features_page')%}nav-link-active{% endif %}">Features
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('page.about_page') }}"
+                class="nav-link {% if request.path == url_for('page.about_page')%}nav-link-active{% endif %}">About
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('page.contact_page') }}"
+                class="nav-link {% if request.path == url_for('page.contact_page')%}nav-link-active{% endif %}">Contact
+            </a>
+        </li>
+    </ul>
+</nav>
