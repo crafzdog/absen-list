@@ -21,6 +21,7 @@ html {
 body {
     font-family: Inter, sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 /* ============================================ */
@@ -28,7 +29,26 @@ body {
 
 .navbar {
     background-color: var(--bg-nav-primary);
+    opacity: 0.85;
     padding: 2rem 0;
+    position: sticky;
+    top: 0px;
+    transition: ease-in;
+}
+
+.test{
+    animation: testnav;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes testnav {
+    50%{
+        opacity: 0.85;
+    }100%{
+        opacity: 0;
+    }
 }
 
 .nav-links {
@@ -45,11 +65,13 @@ body {
     color: var(--fg-nav-primary);
     font-size: 1.7rem;
     padding: 1.2rem 1.5rem;
+    transition: 0.7s;
 }
 
 .nav-link:hover {
     background-color: var(--bg-nav-hover-primary);
     border-radius: 0.5rem;
+    /* transition: 99; */
 }
 
 .nav-link-active {
