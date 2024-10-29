@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "absen-list"
+version = "0.1.0"
+description = "A web app for attendance data"
+authors = ["crafzdog <240414100@fellow.lpkia.ac.id>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.scripts]
+start = "src:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,13 +1,16 @@
 import logging
 
+
 def load():
-    with open("acc.txt","r")as file:
+    with open("acc.txt", "r") as file:
         return file.read().splitlines() if file.readable() else []
-    
+
+
 data_acc = load()
 
+
 def register():
-    while True :
+    while True:
         print("========= Register =========")
         username = str(input("Ketikan Username = "))
         password = str(input("Ketikan Password = "))
@@ -16,13 +19,14 @@ def register():
             print(f"Akun [{username}] Sudah terdaftar")
             break
 
-        with open("acc.txt" , "a")as file:
+        with open("acc.txt", "a") as file:
             file.write(f"username = {username}\n")
             file.write(f"password = {password}\n\n")
 
         print(f"Akun Dengan Nama {username} telah didaftarkan")
-        print(username,password)
+        print(username, password)
         break
+
 
 def login():
     login_log = False
@@ -51,7 +55,7 @@ def login():
     #     print("========= Login ==========")
     #     username = str(input("Nama Akun = "))
     #     password = str(input("Password Akun = "))
-        
+
     #     for idx in range(0, len(data_acc),2):
     #         stored_user = data_acc[idx].strip().split(" = ")[1]
     #         stored_pass = data_acc[idx + 1].strip().split(" = ")[1]
@@ -61,7 +65,7 @@ def login():
     #         if username == stored_user and password == stored_pass:
     #             login_log = True
     #             break
-        
+
     #     if login_log == True:
     #         print(f"hello {username}, W K B")
     #         break
@@ -76,21 +80,21 @@ def login():
     #         print("JAN MAKSA BLOK")
     # return login_log
 
-        # for entry in data_acc:
-        #     if(f"username = {username}" in entry and f"password = {password}" in entry):
-        #         login_log = True
-        #         break
-        # if login_log == True :
-        #     print(f"hallow {username} W K B")
-        # else:
-        #     i= i+1
+    # for entry in data_acc:
+    #     if(f"username = {username}" in entry and f"password = {password}" in entry):
+    #         login_log = True
+    #         break
+    # if login_log == True :
+    #     print(f"hallow {username} W K B")
+    # else:
+    #     i= i+1
 
-        # if i == 1 :
-        #     a1 = f"username = {username} password {password}"
-        #     print("Username atau Password salah")
-        #     print(a1)
-        # elif i == 2:
-        #     print("CODINGAN ERROR")
-        # else:
-        #     print("JAN MAKSA BLOK")
-        #     break
+    # if i == 1 :
+    #     a1 = f"username = {username} password {password}"
+    #     print("Username atau Password salah")
+    #     print(a1)
+    # elif i == 2:
+    #     print("CODINGAN ERROR")
+    # else:
+    #     print("JAN MAKSA BLOK")
+    #     break
