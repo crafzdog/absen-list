@@ -21,3 +21,7 @@ def about_page():
 @page.route("/contact")
 def contact_page():
     return render_template("contact.jinja2")
+
+@page.route("/test")
+def test_page():
+    return render_template("test.jinja2")
