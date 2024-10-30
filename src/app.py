@@ -1,7 +1,13 @@
 from flask import Flask
 
-app = Flask(__name__)
 
-from .routes.page import page
+def create_app():
+    app = Flask(__name__)
 
-app.register_blueprint(page)
+    from .routes.page import page
+    from .routes.auth import auth
+
+    app.register_blueprint(page)
+    app.register_blueprint(auth)
+
+    return app
