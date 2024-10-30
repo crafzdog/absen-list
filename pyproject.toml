@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "src" }]
 
 [tool.poetry.scripts]
-start = "src:main"
+start = "app:main"
 
 [tool.poetry.dependencies]
 python = "^3.12"
