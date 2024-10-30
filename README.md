@@ -2,7 +2,7 @@
 
 Sebuah project mahakarya gabut buatan anak bangsa yang ditujukan untuk data absensi anak-anak IF.
 
-# Cara bergabung ke project ini
+## Introduction
 
 1. Clone repository project.  
 
@@ -26,6 +26,11 @@ git checkout <nama_branch>
 *note: jangan pake branch punya orang lain.
 
 4. Push branch anda ke remote di github.
+
+
+## Table of Contents
+
+- [Getting Started](#introduction)
 
 ```bash
 git push -u origin <nama_branch>
