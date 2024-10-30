@@ -12,6 +12,7 @@ start = "src:main"
 [tool.poetry.dependencies]
 python = "^3.12"
 Flask = "^3.0.3"
+flask-sqlalchemy = "^3.1.1"
 
 
 [build-system]
