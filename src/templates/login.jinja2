@@ -1,0 +1,53 @@
+{%extends 'layouts/base.jinja2'%}
+
+{%block title%}
+Login
+{%endblock%}
+
+{%block content%}
+<main>
+    <section class="login-page">
+        <div class="login-box row shadow-lg p-5" id="login-box">
+            <div class="upper-text col-12 text-center">
+                <h1>Login Form</h1>
+            </div>
+            <div class="login-form col-12">
+                <div class="userbox">
+                    <input class="userin" placeholder="   Username">
+                </div>
+                <div class="passbox mt-5">
+                    <input class="passin" placeholder="   Password">
+                </div>
+                <button>Sign up</button>
+                <div class="login-reg mt-1" id="login-reg">
+                    <a href="#">
+                        <div>Doesn't have Account ?</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="regis-box row shadow-lg p-5" id="regis-box">
+            <div class="upper-text col-12 text-center">
+                <h1>Regis Form</h1>
+            </div>
+            <div class="login-form col-12">
+                <div class="userbox">
+                    <input class="userin" placeholder="   Username">
+                </div>
+                <div class="passbox mt-5">
+                    <input class="passin" placeholder="   Password">
+                </div>
+                <button>Sign up</button>
+                <div class="reg-login mt-1" id="reg-login">
+                    <a href="#">
+                        <div>Doesn't have Account ?</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+{%endblock%}

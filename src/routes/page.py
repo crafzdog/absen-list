@@ -22,6 +22,15 @@ def about_page():
 def contact_page():
     return render_template("contact.jinja2")
 
-@page.route("/test")
-def test_page():
-    return render_template("test.jinja2")
+
+@page.route("/login")
+def login_page():
+    return render_template("login.jinja2")
+
+
+# testing only ~~~
+
+
+@page.route("/start")
+def start_page():
+    return render_template("start.jinja2")

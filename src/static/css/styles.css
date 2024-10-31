@@ -20,75 +20,253 @@ html {
 
 body {
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    font-size: 12px;
+    color: #00c3ca;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #717ff5;
+    text-decoration: none;
 }
 
 /* ============================================ */
 /* Partials */
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 10px 0;
+    position: sticky;
+    top: -10px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.header.header-scrolled {
+    background: #fff;
+    padding: 0px 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header .logo {
+    line-height: 0;
+}
+
+.header .logo img {
+    max-height: 70px;
+    margin-right: 6px;
+}
+
+.header .logo span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+    margin-top: 0;
+}
 
 .navbar {
-    background-color: var(--bg-nav-primary);
-    opacity: 0.85;
-    padding: 2rem 0;
-    position: sticky;
-    top: 0px;
-    transition: ease-in;
+    padding: 0;
 }
 
-.test{
-    animation: testnav;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-}
-
-@keyframes testnav {
-    50%{
-        opacity: 0.85;
-    }100%{
-        opacity: 0;
-    }
-}
-
-.nav-links {
-    list-style-type: none;
+.navbar ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: flex-end;
-    gap: 5rem;
-    margin-right: 10rem;
+    list-style: none;
+    align-items: center;
 }
 
-.nav-link {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--fg-nav-primary);
-    font-size: 1.7rem;
-    padding: 1.2rem 1.5rem;
-    transition: 0.7s;
+.navbar li {
+    position: relative;
 }
 
-.nav-link:hover {
-    background-color: var(--bg-nav-hover-primary);
-    border-radius: 0.5rem;
-    /* transition: 99; */
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    white-space: nowrap;
+    transition: 0.3s;
 }
 
-.nav-link-active {
-    background-color: var(--bg-nav-hover-primary);
-    border-radius: 0.5rem;
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
 }
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+    color: paleturquoise;
+}
+
 
 .footer{
     Background-color: lightgray;
     height: 10vw;
 }
 /* ============================================ */
-/* footer */
+/* start */
+.start-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test2 {
+    border-radius: 55px 55px 0px 55px;
+    background-image: url("../img/goku.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transition: top 0.1s ease, left 0.1s ease; /* Add smooth transition */
+}
+
+
+
+
+.start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+/* Pentagon Style */
+.pentagon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ff0066;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    background-color: black;
+} 
+
 
 /* ============================================ */
 /* home */
-.homies{
-    height: 100vw;
+.home-img{
+    background-color: black;
+    width: 100vw;
+    height: 51.8vw;
+    margin-top: -89px;
+}
+/* .home-img-text{
+    position: absolute;
+    z-index: 100;
+    margin-left: 48vw;
+    margin-top: 11vw;
+} */
+.home-img img{
+    margin-left: -1vw;
+    width: 101vw;
+    opacity: 0.75;
+    background-color: black;
+}
+.home-content{
+    width: 100vw;   
+    height: 50vw;
+    /* background-color: blue; */
+    padding: 13px;
+}
+
+/* ============================================ */
+/* Login / Register */
+.login-page{
+    height: 30vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box{
+    position: absolute;
+    margin-top: 150px;
+    height: 380px;
+    width: 400px;
+}
+.regis-box{
+    position: absolute;
+    margin-top: 150px;
+    height: 380px;
+    width: 400px;
+    transform: translateX(5000px);
+    opacity: 0;
+}
+.upper-text{
+    margin-top: 20px;
+    max-height: 50px;
+    border-bottom: 1px solid black;
+}
+.login-form{
+    margin-top: -30px;
+    border-bottom: 1px solid black;
+    border-radius: 0px 0px 0px 0px;
+    border-bottom-style: ridge;
+    height: 170px;
+}
+
+.userin,.passin{
+    border-radius: 3px;
+    border: 0.1px solid black;
+    height: 29px;
+    width: 295px;
+}
+
+button{
+    margin-top: 20px;
+    width: 295px;
+    height: 29px;
+    border-radius: 55px;
     background-color: white;
+}
+
+.login-reg,.reg-login{
+    margin-left: 181px;
+    width: 300px;
+}
+/* .userbox,.passbox,button{
+    margin-left: 100px;
+} */
+
+.underlined{
+    text-decoration: underline 2px ;
+}
+
+.gone{
+    display: none;
+}
+
+.new{
+    z-index: 999;
 }

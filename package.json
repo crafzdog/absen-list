@@ -1,0 +1,16 @@
+{
+  "name": "absen-list",
+  "version": "1.0.0",
+  "description": "Sebuah project mahakarya gabut buatan anak bangsa yang ditujukan untuk data absensi anak-anak IF.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.12.5"
+  }
+}

@@ -6,8 +6,25 @@
 
 {# Content #}
 
-{% block content %}
-<div>
-    <h1>Hello from home page</h1>
+<div class="home-se">
+    {% block content %}
+    <section>
+        <div class="home-img">
+            {# <div class="home-img-text text-light text-center">
+                <h1><strong>Teknik Informatika</strong></h1>
+            </div> #}
+            <img src="{{ url_for('static',filename='img/bg3.jpg') }}" alt="Test" class="shadow-lg">
+        </div>
+    </section>
+    <main class="home-content">
+        <section class="home-sect row">
+            <div class="col-12 testtext text-center" id="testtext">
+                <h1><strong>
+                        WIP MAKIR COK NANTI LAGI
+                    </strong></h1>
+            </div>
+        </section>
+    </main>
+    {% endblock %}
+
 </div>
-{% endblock %}

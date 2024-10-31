@@ -1,24 +1,24 @@
-<nav class="navbar">
-    <ul class="nav-links">
-        <li>
-            <a href="{{ url_for('page.home_page') }}"
-                class="nav-link {% if request.path == url_for('page.home_page')%}nav-link-active{% endif %}">Home
-            </a>
-        </li>
-        <li>
-            <a href="{{ url_for('page.features_page') }}"
-                class="nav-link {% if request.path == url_for('page.features_page')%}nav-link-active{% endif %}">Features
-            </a>
-        </li>
-        <li>
-            <a href="{{ url_for('page.about_page') }}"
-                class="nav-link {% if request.path == url_for('page.about_page')%}nav-link-active{% endif %}">About
-            </a>
-        </li>
-        <li>
-            <a href="{{ url_for('page.contact_page') }}"
-                class="nav-link {% if request.path == url_for('page.contact_page')%}nav-link-active{% endif %}">Contact
-            </a>
-        </li>
-    </ul>
-</nav>
+<!-- ======= Header ======= -->
+<header id="header" class="header shadow">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="/" class="logo d-flex align-items-center">
+
+            <span><img src="{{ url_for('static',filename='img/test.jpg') }}" alt="Test"></span>
+        </a>
+        {# #}
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" href="/#home">Home</a></li>
+                <li><a class="nav-link scrollto" href="/features">Feature</a></li>
+                {# <li><a class="nav-link scrollto" href="/#services">About</a></li> #}
+                <li><a class="nav-link scrollto" href="../contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+                {# <li><a class="nav-link scrollto" href="/#recent-blog-posts">Blog</a></li> #}
+                <li><a class="nav-link scrollto" href="/login">Login</a></li>
+            </ul>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->

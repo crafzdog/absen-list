@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'layouts/base.jinja2'%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Pentagon Animation</title>
+    <style>
+    </style>
+</head>
+
+<body id="body-start">
+    {% block content%}
+    <div class="start-container">
+        <div class="pentagon-container">
+            <div class="pentagon"></div>
+            <div class="pentagon"></div>
+            <div class="pentagon"></div>
+            <div class="pentagon"></div>
+            <div class="pentagon"></div>
+            <div class="pentagon"></div>
+        </div>
+    </div>
+    <div class="start-container">
+        <div class="test2">
+        </div>
+    </div>
+    {%endblock%}
+</body>
+
+</html>
