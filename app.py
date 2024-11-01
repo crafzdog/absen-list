@@ -1,5 +1,7 @@
-from src import app
+from src import create_app
 
 
 def main():
+    app = create_app()
+
     app.run(debug=True)
