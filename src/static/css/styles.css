@@ -21,34 +21,14 @@ html {
 body {
     font-family: Inter, sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 /* ============================================ */
-/* Partials */
+/* ================= Navbar =================== */
 
 .navbar {
     background-color: var(--bg-nav-primary);
-    opacity: 0.85;
     padding: 2rem 0;
-    position: sticky;
-    top: 0px;
-    transition: ease-in;
-}
-
-.test{
-    animation: testnav;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-}
-
-@keyframes testnav {
-    50%{
-        opacity: 0.85;
-    }100%{
-        opacity: 0;
-    }
 }
 
 .nav-links {
@@ -71,7 +51,6 @@ body {
 .nav-link:hover {
     background-color: var(--bg-nav-hover-primary);
     border-radius: 0.5rem;
-    /* transition: 99; */
 }
 
 .nav-link-active {
@@ -79,16 +58,5 @@ body {
     border-radius: 0.5rem;
 }
 
-.footer{
-    Background-color: lightgray;
-    height: 10vw;
-}
 /* ============================================ */
-/* footer */
-
-/* ============================================ */
-/* home */
-.homies{
-    height: 100vw;
-    background-color: white;
-}
+/* ================= Navbar =================== */
