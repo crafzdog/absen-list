@@ -1,6 +1,7 @@
-from . import db
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import VARCHAR
+
+from .. import db
 
 
 class User(db.Model):
