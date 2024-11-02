@@ -1,118 +1,149 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ============================================ */
-/* ================  CSS RESET ================ */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-}
-
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-#root,
-#__next {
-    isolation: isolate;
-}
-
-/* ============================================ */
-/* ============================================ */
+/* ============== CUSTOM COLOR  =============== */
 
 :root {
-    --bg-nav-primary: #0f172a;
-    --fg-nav-primary: #f1f5f9;
-    --bg-nav-hover-primary: rgba(51, 65, 85, 0.77);
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: Inter, sans-serif;
-}
-
-/* ============================================ */
-/* ================= Navbar =================== */
-
-.navbar {
-    background-color: var(--bg-nav-primary);
-    padding: 2rem 0;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 5rem;
-    margin-right: 10rem;
-}
-
-.nav-link {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--fg-nav-primary);
-    font-size: 1.7rem;
-    padding: 1.2rem 1.5rem;
-    transition: 0.7s;
-}
-
-.nav-link:hover {
-    background-color: var(--bg-nav-hover-primary);
-    border-radius: 0.5rem;
-}
-
-.nav-link-active {
-    background-color: var(--bg-nav-hover-primary);
-    border-radius: 0.5rem;
+    --bg-primary-navbar: #0f172a;
+    --bg-primary-navlink-hover: rgba(51, 65, 85, 0.77);
+    --fg-primary-navbar: #f1f5f9;
 }
 
 /* ============================================ */
 /* ============================================ */
+
+/* ============================================ */
+/* ================ FONT SCALE ================ */
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* ============================================ */
+/* ============================================ */
+
+/* ============================================ */
+/* ============== CUSTOM CSS  =============== */
+
+.x-navbar {
+    background-color: var(--bg-primary-navbar);
+}
+
+.x-navbar__box {
+    gap: 4rem;
+    font-size: 1.1rem;
+}
+
+.x-navbar__link {
+    color: var(--fg-primary-navbar) !important;
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.25rem;
+}
+
+.x-navbar__link:hover {
+    background-color: var(--bg-primary-navlink-hover);
+}

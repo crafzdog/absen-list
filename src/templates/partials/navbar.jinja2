@@ -1,24 +1,11 @@
-<nav class="navbar">
-    <ul class="nav-links">
-        <li>
-            <a href="{{ url_for('page.home_page') }}"
-                class="nav-link {% if request.path == url_for('page.home_page')%}nav-link-active{% endif %}">Home
-            </a>
-        </li>
-        <li>
-            <a href="{{ url_for('page.features_page') }}"
-                class="nav-link {% if request.path == url_for('page.features_page')%}nav-link-active{% endif %}">Features
-            </a>
-        </li>
-        <li>
-            <a href="{{ url_for('page.about_page') }}"
-                class="nav-link {% if request.path == url_for('page.about_page')%}nav-link-active{% endif %}">About
-            </a>
-        </li>
-        <li>
-            <a href="{{ url_for('page.contact_page') }}"
-                class="nav-link {% if request.path == url_for('page.contact_page')%}nav-link-active{% endif %}">Contact
-            </a>
-        </li>
-    </ul>
-</nav>
+<header>
+    <nav class="d-flex justify-content-around align-items-center py-3 x-navbar">
+        <div class="text-white">LOGO</div>
+        <div class="d-flex poppins-regular x-navbar__box">
+            <a href="#" class="text-decoration-none x-navbar__link">Home</a>
+            <a href="#" class="text-decoration-none x-navbar__link">Features</a>
+            <a href="#" class="text-decoration-none x-navbar__link">About</a>
+            <a href="#" class="text-decoration-none x-navbar__link">Contact</a>
+        </div>
+    </nav>
+</header>
