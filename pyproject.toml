@@ -14,6 +14,9 @@ python = "^3.12"
 Flask = "^3.0.3"
 flask-sqlalchemy = "^3.1.1"
 
+[tool.poetry.plugins.dotenv]
+location = ".env.dev"
+
 
 [build-system]
 requires = ["poetry-core"]
