@@ -7,4 +7,27 @@
 {# Content #}
 
 {% block content %}
+<header class="position-relative vh-100">
+    {% include 'partials/navbar.jinja2' %}
+
+    <div class="container x-hero">
+        <div class="row justify-content-between align-items-center mt-5">
+            <div class="col-5">
+                <div class="mb-5">
+                    <h1 class="mb-3">Track Attendance</span> with Ease</h1>
+                    <p class="fs-5">Record attendance efficiently, generate reports, and manage schedules all in a
+                        user-friendly platform built for reliability and ease.</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <button class="py-2 px-4 x-btn-slate">Sign Up</button>
+                    <button class="py-2 px-4 x-btn-outline-slate">Login</button>
+                </div>
+            </div>
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='img/hero-img.png') }}" class="x-hero__img" alt="hero-img" />
+            </div>
+        </div>
+    </div>
+</header>
+
 {% endblock %}

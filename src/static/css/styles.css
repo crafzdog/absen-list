@@ -142,8 +142,31 @@
     color: var(--fg-primary-navbar) !important;
     padding: 0.65rem 0.85rem;
     border-radius: 0.25rem;
+    transition: all ease-in-out 0.2s;
 }
 
 .x-navbar__link:hover {
     background-color: var(--bg-primary-navlink-hover);
+}
+
+.x-hero__img {
+    width: 500px;
+}
+
+.x-btn-slate {
+    background-color: var(--bg-primary-navbar);
+    color: var(--fg-primary-navbar);
+    border-radius: 0.5rem;
+}
+
+.x-btn-outline-slate {
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    outline: 2px solid var(--bg-primary-navbar);
+    color: var(--bg-primary-navbar);
+}
+
+.x-hero {
+    padding-top: 5rem;
 }
